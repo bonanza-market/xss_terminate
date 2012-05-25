@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "xss_terminate"
 
   # If you have other dependencies, add them here
-  # s.add_dependency "another", "~> 1.2"
+  s.add_dependency "html5", ">= 0.10.0"
 
   # If you need to check in files that aren't .rb files, add them here
   s.files        = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md"]
