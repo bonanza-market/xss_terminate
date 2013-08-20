@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Railscode"]
   s.email       = ["railscode@gmail.com"]
-  s.homepage    = "http://github.com/vav/xss_terminate"
+  s.homepage    = "http://github.com/st-granat/xss_terminate"
   s.summary     = "XssTerminate"
   s.description = "XssTerminate for Rails 3.2"
   s.required_rubygems_version = ">= 1.3.6"

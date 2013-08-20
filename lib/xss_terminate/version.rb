@@ -1,3 +1,3 @@
 module XssTerminate
-  VERSION = "0.21"
+  VERSION = "0.22"
 end
