@@ -11,7 +11,6 @@ Gem::Specification.new do |s|
   s.summary     = "XssTerminate"
   s.description = "XssTerminate for Rails 3.2"
   s.required_rubygems_version = ">= 1.3.6"
-  s.add_dependency "html5", ">= 0.10.0"
   s.files        = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md"]
   s.require_path = 'lib'
 end
