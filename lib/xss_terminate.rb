@@ -4,7 +4,7 @@ module XssTerminate
   def self.included(base)
     base.extend(ClassMethods)
     # sets up default of stripping tags for all fields
-    # base.send(:xss_terminate)
+    base.send(:xss_terminate)
   end
 
   module ClassMethods
