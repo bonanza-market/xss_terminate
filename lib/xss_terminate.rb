@@ -9,7 +9,7 @@ module XssTerminate
 
   module ClassMethods
     def xss_terminate(options = {})
-      before_validation :sanitize_fields
+      before_save :sanitize_fields
 
       class_attribute :xss_terminate_options
       self.xss_terminate_options = {
