@@ -39,9 +39,9 @@ module XssTerminate
         if xss_terminate_options[:except].include?(field)
           next
         elsif xss_terminate_options[:sanitize].include?(field)
-          self[field] = RailsSanitize.white_list_sanitizer.sanitize(value)
+          self[field] = RailsSanitize.white_list_sanitizer.strip_tags(value)
         else
-          self[field] = RailsSanitize.full_sanitizer.sanitize(value)
+          self[field] = RailsSanitize.full_sanitizer.strip_tags(value)
         end
       end
 
