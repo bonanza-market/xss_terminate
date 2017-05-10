@@ -39,9 +39,9 @@ module XssTerminate
         if xss_terminate_options[:except].include?(field)
           next
         elsif xss_terminate_options[:sanitize].include?(field)
-          self[field] = RailsSanitize.white_list_sanitizer.sanitize(value, encode_special_chars: false)
+          self[field] = RailsSanitize.white_list_sanitizer.sanitize(value)
         else
-          self[field] = RailsSanitize.full_sanitizer.sanitize(value, encode_special_chars: false)
+          self[field] = Loofah.fragment(value).text(encode_special_chars: false)
         end
       end
 
