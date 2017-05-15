@@ -32,7 +32,7 @@ module XssTerminate
         next unless (column.type == :string || column.type == :text)
 
         field = column.name.to_sym
-        value = self[field]
+        value = read_attribute(field)
 
         next if value.nil? || !value.is_a?(String)
 
